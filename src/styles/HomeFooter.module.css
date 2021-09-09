@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+.container {
+    height: 70vh;
+    background-color: #512DA8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Open sans';
+}
+#textFooter {
+    width: 40%;
+    text-align: justify;
+}
+
+.brandIcon {
+    font-size: 80px;
+    color: white;
+}
+
+#btnFooter {
+    width: 250px;
+    height: 45px;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+
+#btnFooter:hover {
+    background-color: rgb(180, 10, 10);
+}
+
+#footerBrand {
+    font-size: 18px;
+}
+
+.containerFooter {
+    height: 40vh;
+    background-color: #3c1f92;
+    display: flex;
+    padding: 40px 80px;
+}
+
+.footerContainer1 {
+    width: 25vw;
+    color: white;
+    padding-top: 30px;
+    padding-right: 70px;
+}
+
+.footerContainer1 p {
+    font-size: 12px;
+    text-align: justify;
+}
+
+.iconFooter {
+    font-size: 20px;
+    color: rgb(173, 173, 8);
+}
+
+.footerContainer2 {
+    width: 30vw;
+    color: rgb(201, 197, 197);
+}
+
+#h2TitleFooter {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.inputBtn {
+    display: flex;
+}
+
+.btnFooterSubmit {
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: red;
+    transition: 0.5s;
+    color: white;
+}
+
+.btnFooterSubmit:hover {
+    background-color: rgb(160, 13, 13);
+}
+
+#iconFooterTwitter {
+    transition: 0.5s;
+}
+#iconFooterTwitter:hover {
+    color: red;
+}
+
+#iconFooterFacebook {
+    transition: 0.5s;
+}
+#iconFooterFacebook:hover {
+    color: red;
+}

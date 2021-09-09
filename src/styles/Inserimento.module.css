@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.container {
+    font-family: 'Source sans pro';
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.insertContainer {
+    display: flex;
+    flex-direction: column;
+}
+input, textarea{
+    padding: 10px;
+    font-family: 'Montserrat';
+}
+
+label {
+    text-align: left;
+}
+
+#areaContainer {
+    margin-top: 20px;
+}
+.btnInsert {
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    width: 200px;
+    margin-top: 25px;
+    transition: 0.5s;
+    color: rgb(179, 174, 174);
+    background-color: rgb(7, 7, 71);
+}
+.btnInsert:hover {
+    background-color: blue;
+    color: white;
+}
+#resetBtn {
+    margin-left: 15px;
+}

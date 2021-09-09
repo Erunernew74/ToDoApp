@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+.container {
+    height: 80vh;
+    background-color: rgb(241, 241, 239);
+    display: flex;
+    font-family: 'Montserrat';
+}
+.itemContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+}
+
+#textItem {
+    line-height: 1.9;
+    font-weight: lighter;
+}
+
+.btnContainer {
+    display: flex;
+    
+}
+
+.btnIcon {
+    margin: 0 20px;
+}
+
+#demoIcon {
+    background-color: #51cbce;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: 900;
+    border: none;
+    width: 180px;
+    height: 50px;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+#demoIcon:hover {
+    background-color: #0bb0b3 ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#viewIcon {
+    background-color: #f9fdfd;
+    color: #51cbce;
+    cursor: pointer;
+    font-weight: 900;
+    border: 2px solid #51cbce;
+    width: 180px;
+    height: 50px;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+#viewIcon:hover {
+    background-color: #51cbce;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}

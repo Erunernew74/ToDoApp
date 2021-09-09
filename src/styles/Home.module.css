@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.container {
+    background-image: url('../images/mac.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    background-blend-mode: multiply;
+    background-color: rgb(136, 135, 135);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open sans';
+}
+
+.containerTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 55px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.sottoTitolo {
+    color: white;
+}
+
+.btnDettagli {
+    border: none;
+    width: 200px;
+    height: 55px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: red;
+    color: white;
+    margin-top: 40px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+span {
+    margin-left: 30px;
+}
+.btnDettagli {
+    text-decoration: none;
+
+}
+.btnDettagli a {
+    text-decoration: none;
+    color: white;
+
+}
+.btnDettagli:hover {
+    background-color: rgb(153, 0, 0);
+}
+#inputDettagli {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.iconDettagli {
+    font-size: 15px;
+
+}

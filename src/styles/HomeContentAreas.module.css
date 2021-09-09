@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+.container {    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.laptopContainer {
+    background-image: url('../images/ipad-content-2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 50vw;
+    padding-right: 20px;
+    margin: 50px 0;
+}
+
+.textContainer {
+    color: rgb(0, 0, 0);
+    padding-left: 70px;
+    width: 30vw;
+}
+
+#firstTitle, #secondTitle {
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+#thirdTitle {
+    text-align: justify;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    padding-top: 20px;
+}
+

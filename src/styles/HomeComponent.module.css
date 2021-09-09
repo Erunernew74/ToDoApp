@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+.container {    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url('../images//mac2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgb(73, 73, 73);
+    padding: 50px 0;
+}
+
+.laptopContainer {
+    background-image: url('../images/laptop-basic.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 500vw;
+}
+
+.textContainer {
+    color: white;
+    padding-right: 70px;
+    padding-top: -120px
+}
+
+#firstTitle, #secondTitle {
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+#thirdTitle {
+    text-align: justify;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    padding-top: 20px;
+}
+
