@@ -16,11 +16,11 @@ app.use(express.json());
 
 
 // Inserimento:
-app.post('/inserimento', async(req, res) => {
+app.post('/inserimento', async (req, res) => {
     const titolo = req.body.titolo;
     const descrizione = req.body.descrizione;
-    connection.query("INSERT INTO listatodo (id, titolo, descrizione) VALUES (null, ?, ?)",[titolo, descrizione], (err, result, fields) => {
-        if(err) {
+    connection.query("INSERT INTO listatodo (id, titolo, descrizione) VALUES (null, ?, ?)", [titolo, descrizione], (err, result, fields) => {
+        if (err) {
             console.log(err)
             return res.json({ msg: 'Inserimento errato!' })
         } else {
@@ -32,7 +32,7 @@ app.post('/inserimento', async(req, res) => {
 // Visione della lista completa
 app.get('/lista', (req, res) => {
     connection.query(`SELECT * FROM listatodo`, (err, result, fields) => {
-        if(err) {
+        if (err) {
             console.log(err)
             return res.json({ msg: "Nessuna lista" })
         }
@@ -44,12 +44,14 @@ app.get('/lista', (req, res) => {
 app.delete('/delete/:id', (req, res) => {
     const id = req.params.id;
     connection.query("DELETE FROM listatodo WHERE id = ?", id, (err, result) => {
-        if(err) {
+        if (err) {
             console.log(err)
+            res.json({ err })
         } else {
             console.log('Cancellazione avvenuta con successo')
         }
     })
+    res.json({ msg: "Eliminato con successo!" })
 })
 // app.delete('/delete', async(req, res) => {
 //     connection.query(`DELETE FROM listatodo WHERE id = ${req.body.id}`, (err, result) => {
@@ -67,15 +69,17 @@ app.post('/aggiornaNota/:id', (req, res) => {
     const id = req.params.id;
     const titolo = req.body.titolo;
     const descrizione = req.body.descrizione;
-    connection.query(`UPDATE listatodo SET titolo='${titolo}', descrizione='${descrizione}' WHERE id='${id}'`,[id,titolo, descrizione], (err, result) => {
-        if(err) {
+    console.log(titolo, descrizione)
+    connection.query(`UPDATE listatodo SET titolo="${titolo}", descrizione="${descrizione}" WHERE id=${id}`, (err, result) => {
+        if (err) {
             console.log(err)
-    
-        }else {
+
+        } else {
             console.log('Aggiornamento avvenuto con successo')
-            
+
         }
     })
+    res.json({ msg: "Aggiornato con successo!" })
 })
 
 
